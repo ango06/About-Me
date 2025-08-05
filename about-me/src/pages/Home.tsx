@@ -22,11 +22,11 @@ const Home = () => {
 
     // upon mount or db change
     useEffect(() => {
-        async function fetch() {
-                const ratingsList = await getRatings();
-                setRatings(ratingsList);
+        async function fetchRatings() {
+            const ratingsList = await getRatings();
+            setRatings(ratingsList);
         }
-        fetch();
+        fetchRatings();
     }, []);
     
     return (
@@ -40,14 +40,16 @@ const Home = () => {
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST1Y7xjxG0F0hTjegfbE9P4XQ7BCQjjWWM0g&s"></img>
             </div>
 
-            <div className="h-150 my-10 flex flex-row gap-4 rounded-3xl bg-[#C04A2A]">
-                <div className="p-4">
-                    <h3 className="my-4 text-center font-bold text-4xl text-white">What's playing??</h3>   
-                    <img className="h-120 mx-8 rounded-3xl" src="https://i.pinimg.com/736x/7c/70/4c/7c704c8ec62601c31bd4626acc0a94fc.jpg" /> 
+            <section>
+                <div className="h-150 my-10 flex flex-row gap-4 rounded-3xl bg-[#C04A2A]">
+                    <div className="p-4">
+                        <h3 className="my-4 text-center font-bold text-4xl text-white">What's playing??</h3>   
+                        <img className="h-120 mx-8 rounded-3xl" src="https://i.pinimg.com/736x/7c/70/4c/7c704c8ec62601c31bd4626acc0a94fc.jpg" /> 
+                    </div>
+                    <iframe className="m-10 flex-1 rounded-3xl" src="https://open.spotify.com/embed/playlist/37i9dQZF1EpjeBzB9UN9x7?utm_source=generator" 
+                        width="100%" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>     
                 </div>
-                <iframe className="m-10 flex-1 rounded-3xl" src="https://open.spotify.com/embed/playlist/37i9dQZF1EpjeBzB9UN9x7?utm_source=generator" 
-                     width="100%" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>     
-            </div>
+            </section>
 
             <section> 
                 <div className="flex flex-row gap-4 items-center justify-center">
@@ -57,18 +59,11 @@ const Home = () => {
                     <Button onClick={handleIncrease} variant="contained" style={{ background:"#232c73"}}>+</Button>
                     <Button onClick={handleRatings} variant="text" style={{ color:"black", background:"#e938a5"}}>SUBMIT</Button>
                 </div>
-                <h4 className="text-2xl font-bold">Ratings</h4>
-                {ratings.map(rating => <p>{rating}</p>)}
-            </section>
-
-            <section>
-                <h3 className="text-center text-4xl font-bold">My Pinterest guise</h3>
-                <div className="m-2 w-150 justify-self-center self-center">
-                    <a data-pin-do="embedBoard" data-pin-scale-height="400"
-                    href="https://www.pinterest.com/greenuht/Me" />
+                <h4 className="mt-10 mb-5 text-2xl font-bold text-center">Ratings</h4>
+                <div className="flex flex-row gap-10 flex-wrap">
+                    {ratings.map(rating => <p className="w-10">{rating}</p>)}
                 </div>
             </section>
-
         </div>
     )
 }

@@ -3,7 +3,8 @@ const Classes = () => {
 
     return (
         <>
-            <h1 className="my-10 font-bold text-6xl text-red-900">UMD</h1>
+            <h1 className="my-10 font-bold text-center text-6xl text-red-900">UMD</h1>
+            <h2 className="text-2xl">Sophmore Year</h2>
             <h2 className="text-2xl">Freshmen Year</h2>
             <div className="flex row justify-around">
                 <table>
@@ -61,7 +62,7 @@ const Classes = () => {
                 </table>
             </div>
 
-            <h1 className="my-10 font-bold text-6xl text-blue-900">UHS</h1>
+            <h1 className="my-10 font-bold text-center text-6xl text-blue-900">UHS</h1>
             <div className="flex row justify-around">
                 <div>
                     <h2 className="text-2xl">9th grade</h2>
@@ -168,7 +169,7 @@ const Classes = () => {
                 </div>
             </div>
 
-            <h1 className="my-10 font-bold text-6xl text-blue-700">UMS</h1>
+            <h1 className="my-10 font-bold text-center text-6xl text-blue-700">UMS</h1>
                 <div className="flex row justify-around">
                 <h2 className="text-2xl">6th grade</h2>
                 <h2 className="text-2xl">7th grade</h2>
