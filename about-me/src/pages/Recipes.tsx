@@ -28,7 +28,7 @@ const Recipes = () => {
 
     return (
         <>
-            <h1 className="my-5 font-bold text-center text-6xl text-[#A12648]">My Best Dishes</h1>
+            <h1 className="my-5 text-center text-[#A12648]">My Best Dishes</h1>
             <Box className="justify-self-center p-4">
                 <Button variant="contained" 
                     onClick={handleOpen}
@@ -42,7 +42,7 @@ const Recipes = () => {
                 </Box>
             </Modal>
 
-            <div className="flex flex-row flex-wrap">
+            <div className="mx-8 flex flex-row flex-wrap justify-between">
                 {recipes.map(recipe => <Recipe key={recipe.name} {...recipe}/>)}
             </div>
         </>

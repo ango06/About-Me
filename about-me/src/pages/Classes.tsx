@@ -3,9 +3,9 @@ const Classes = () => {
 
     return (
         <>
-            <h1 className="my-10 font-bold text-center text-6xl text-red-900">UMD</h1>
-            <h2 className="text-2xl text-center">Sophmore Year</h2>
-            <h2 className="text-2xl text-center">Freshmen Year</h2>
+            <h1 className="my-10 text-center text-red-900">UMD</h1>
+            <h2 className="text-center">Sophmore Year</h2>
+            <h2 className="text-center">Freshmen Year</h2>
             <div className="flex row justify-around">
                 <table>
                     <tr>
@@ -62,7 +62,7 @@ const Classes = () => {
                 </table>
             </div>
 
-            <h1 className="my-10 font-bold text-center text-6xl text-blue-900">UHS</h1>
+            <h1 className="my-10 text-center text-blue-900">UHS</h1>
             <div className="flex row justify-around">
                 <div>
                     <h2 className="text-2xl">9th grade</h2>
@@ -91,7 +91,7 @@ const Classes = () => {
                 </div>
 
                 <div>
-                    <h2 className="text-2xl">10th grade</h2>
+                    <h2>10th grade</h2>
                     <table className="border border-gray-300 bg-red-100">
                         <tr>
                             <th className="p-2 border border-gray-300">Semester 1</th>
@@ -117,7 +117,7 @@ const Classes = () => {
                 </div>
 
                 <div>
-                    <h2 className="text-2xl">11th grade</h2>
+                    <h2>11th grade</h2>
                     <table className="border border-gray-300 bg-red-100">
                         <tr>
                             <th className="p-2 border border-gray-300">Semester 1</th>
@@ -143,7 +143,7 @@ const Classes = () => {
                 </div>
 
                 <div>
-                    <h2 className="text-2xl">12th grade</h2>
+                    <h2>12th grade</h2>
                     <table className="border border-gray-300 bg-red-100">
                         <tr>
                             <th className="p-2 border border-gray-300">Semester 1</th>
@@ -169,7 +169,7 @@ const Classes = () => {
                 </div>
             </div>
 
-            <h1 className="my-10 font-bold text-center text-6xl text-blue-700">UMS</h1>
+            <h1 className="my-10 text-center text-blue-700">UMS</h1>
                 <div className="flex row justify-around">
                 <h2 className="text-2xl">6th grade</h2>
                 <h2 className="text-2xl">7th grade</h2>

@@ -1,0 +1,40 @@
+body {
+    font-family: "Poppins", san-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Archivo Black", sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.25rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: "Poppins", san-serif;
+}
+
+
+/*
+TEXT FONT SIZES
+h1: text-6xl = 3.75 rem = 60px
+h2: text-5xl = 3rem = 48px
+h3: text-4xl = 2.25 rem = 36px
+h4: text-2xl = 1.5rem = 24px
+
+COLORS
+pale yellow: #FFEAB4
+dark pink: #A12648
+tan: #baa288
+darker tan: #94816c
+burnt orange: #C04A2A
+*/

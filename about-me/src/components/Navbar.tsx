@@ -4,8 +4,8 @@ const Navbar = () => {
 
     return (
         <nav className="top-0 bg-[#A12648] h-15 flex px-4 justify-between items-center text-[#FFEAB4] w-full fixed">
-            <Link to="/" className="font-bold">HOME</Link>
-            <ul className="flex gap-4 no-underline">
+            <Link to="/" className="font-bold text-xl">HOME</Link>
+            <ul className="flex gap-10 no-underline text-xl">
                 <li><Link to="/classes">Class Schedule</Link></li>
                 <li><Link to="/favorites">Favorites</Link></li>
                 <li><Link to="/recipe-book">Recipes</Link></li>
