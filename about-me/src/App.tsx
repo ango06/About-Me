@@ -20,14 +20,14 @@ function App() {
   return (
       <BrowserRouter>
         <Navbar/>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/classes" element={<Classes/>} />
-            <Route path="/favorites" element={<Favorites />} />
-            <Route path="/recipe-book" element={<RecipeBook />} />
-            <Route path="/connect" element={<Connect />} />
-            <Route path="*" element={<PageNotFound/>} />
-          </Routes>
+        <Routes >
+          <Route path="/" element={<Home />} />
+          <Route path="/classes" element={<Classes/>} />
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/recipe-book" element={<RecipeBook />} />
+          <Route path="/connect" element={<Connect />} />
+          <Route path="*" element={<PageNotFound/>} />
+        </Routes>
       </BrowserRouter>
   )
 }

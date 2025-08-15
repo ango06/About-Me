@@ -4,8 +4,8 @@ const Classes = () => {
     return (
         <>
             <h1 className="my-10 font-bold text-center text-6xl text-red-900">UMD</h1>
-            <h2 className="text-2xl">Sophmore Year</h2>
-            <h2 className="text-2xl">Freshmen Year</h2>
+            <h2 className="text-2xl text-center">Sophmore Year</h2>
+            <h2 className="text-2xl text-center">Freshmen Year</h2>
             <div className="flex row justify-around">
                 <table>
                     <tr>

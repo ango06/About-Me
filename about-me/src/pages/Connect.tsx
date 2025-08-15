@@ -14,25 +14,11 @@ const Connect = () => {
                 <Socials name="Roblox" img="https://static.vecteezy.com/system/resources/previews/027/127/470/non_2x/roblox-logo-roblox-icon-transparent-free-png.png" />
                 <Socials name="Depop" img="https://img.icons8.com/?size=512&id=vndRkJftsYKS&format=png" />
             </div>
-            <section className="m-10">
-                <h3 className="text-center text-4xl font-bold">My Pinterest Profile</h3>
-                <div className="m-2 w-150 justify-self-center self-center">
-                    <a data-pin-do="embedBoard" data-pin-scale-height="400"
-                    href="https://www.pinterest.com/greenuht/Me" />
-                </div>
-            </section>
         </>
     )
 }
 
 export default Connect;
 
-/*
-            <a
-                href="https://www.pinterest.com/greenuht/"
-                data-pin-do="embedUser"
-                data-pin-board-width="400"
-                data-pin-scale-height="320"
-                data-pin-scale-width="80">
-            </a>
-*/
+// upon hover, display user name under
+// also allow photos as links

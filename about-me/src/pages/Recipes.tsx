@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import { Button } from '@mui/material';
+import { Box, Button, Modal } from "@mui/material";
 import { getFirestore } from "firebase/firestore";
 
 import Recipe from "../components/Recipe.tsx";
-import { addRecipe, getRecipes } from "../handleData.ts";
+import AddRecipe from "../components/AddRecipe.tsx";
+import { getRecipes } from "../handleData.ts"; // addRecipe
 import type { RecipeType } from "../handleData.ts";
 
 const Recipes = () => {
@@ -28,7 +29,19 @@ const Recipes = () => {
     return (
         <>
             <h1 className="my-5 font-bold text-center text-6xl text-[#A12648]">My Best Dishes</h1>
-            <Button variant="contained" sx={{ margin: '2rem', backgroundColor: '#6e1a0f', justifySelf: 'center'  }}>Add Recipe</Button>
+            <Box className="justify-self-center p-4">
+                <Button variant="contained" 
+                    onClick={handleOpen}
+                    sx={{ backgroundColor: '#6e1a0f', borderRadius: '30px' }}>
+                    Add Recipe
+                </Button>
+            </Box>
+            <Modal open={open} onClose={handleClose} >
+                <Box>
+                    <AddRecipe />
+                </Box>
+            </Modal>
+
             <div className="flex flex-row flex-wrap">
                 {recipes.map(recipe => <Recipe key={recipe.name} {...recipe}/>)}
             </div>

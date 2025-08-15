@@ -30,7 +30,7 @@ const Home = () => {
     }, []);
     
     return (
-        <div className="p-10 bg-[#FFEAB4]">
+        <div className="p-10">
             <div className="flex flex-row justify-around">
                 <div className="flex flex-col">
                     <h1 className="my-5 font-bold text-6xl text-[#A12648]">About Angela Ngo</h1>
