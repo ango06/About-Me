@@ -34,7 +34,7 @@ const Home = () => {
             <div className="flex flex-row justify-around">
                 <div className="flex flex-col">
                     <h1 className="my-5 text-[#A12648]">About Angela Ngo</h1>
-                    <p>Here is a fun summer 2025 project. Enjoy ... </p>
+                    <p>Here's a fun project started in summer 2025. It's still VERY in the works. Regardless, enjoy! </p>
                     <img className="my-5 h-20 w-30 animate-bounce" src="https://pixsector.com/cache/0688783e/avbf566659ab2bdf82f87.png"/>
                 </div>
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST1Y7xjxG0F0hTjegfbE9P4XQ7BCQjjWWM0g&s"></img>
@@ -43,7 +43,7 @@ const Home = () => {
             <section>
                 <div className="h-150 my-10 flex flex-row gap-4 rounded-3xl bg-[#C04A2A]">
                     <div className="p-4">
-                        <h3 className="my-4 text-center text-white">What's playing??</h3>   
+                        <h3 className="my-4 text-center text-white">What's playing???</h3>   
                         <img className="h-120 mx-8 rounded-3xl" src="https://i.pinimg.com/736x/7c/70/4c/7c704c8ec62601c31bd4626acc0a94fc.jpg" /> 
                     </div>
                     <iframe className="m-10 flex-1 rounded-3xl" src="https://open.spotify.com/embed/playlist/37i9dQZF1EpjeBzB9UN9x7?utm_source=generator" 

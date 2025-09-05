@@ -4,6 +4,7 @@ const Classes = () => {
     return (
         <>
             <h1 className="my-10 text-center text-red-900">UMD</h1>
+            <p className="text-center">Very unfinished page</p>
             <h2 className="text-center">Sophmore Year</h2>
             <h2 className="text-center">Freshmen Year</h2>
             <div className="flex row justify-around">

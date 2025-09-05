@@ -1,5 +1,3 @@
-
-
 interface CardObj {
     name: string,
     img: string
